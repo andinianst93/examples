@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: healthcheck-config
+  namespace: default
+data:
+  HEALTHCHECK_PATH: "/healthz"
+  PORT: "8080"
